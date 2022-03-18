@@ -474,7 +474,9 @@ img {
 	column-gap: .25rem;
 }
 
-.work__button:hover
+.work__button:hover{
+	transform: translateX(.25rem);
+}
 
 
 
