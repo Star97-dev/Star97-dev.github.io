@@ -1,0 +1,29 @@
+1. POS & SIE
+Membuat Point of Sale dan Sistem Informasi Eksekutif berbasis web pada kafe
+dalam pengerjaan aplikasi ini menggunakan framework php codeigniter dan mempunyai 3 hak akses user
+fitur yang terdapat dalam apk ini sebagai berikut:
+
+1. Admin
+- User CRUD
+- Supplier
+- Inventory
+ - Menu
+ - Resep
+ - Bahan
+ - Stok Opname
+- Transaksi
+ - Stok In
+ - Stok Out
+- Pengeluaran
+2. Kasir
+- Diskon
+- Transaksi
+ - POS
+ - Penjualan
+3. Manager
+- Penjualan
+- Drilldown
+
+2. Web Profile Zero Custom
+Membuat web profile untuk online shop zero custom yang bertema case hp
+
