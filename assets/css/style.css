@@ -873,6 +873,7 @@ img {
 .button__back{
 	color: var(--first-color);
 	font-size: var(--font-medium);
+
 }
 
 /* PROJECT DETAIL */
@@ -910,6 +911,13 @@ img {
 .skills__name-features{
 	font-size: var(--smaller-font-size);
 	font-weight: var(--font-medium);
-	text-align: left;
-	
+	text-align: left;	
+}
+
+.section__subtitle-click {
+	display: block;
+	text-align: center;
+	margin-top: -4rem;
+	font-size: var(--smaller-font-size);
+	color: var(--text-color-light);
 }
