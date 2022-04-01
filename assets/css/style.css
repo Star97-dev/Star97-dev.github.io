@@ -878,7 +878,7 @@ img {
 /* PROJECT DETAIL */
 .img-project{
 	text-align: center;
-	margin-top: -3rem;
+	margin-top: -1rem;
 	margin-bottom: 3rem;
 }
 
@@ -905,4 +905,11 @@ img {
 	font-weight: var(--font-medium);
 	line-height: 18px;
 	text-align: justify;
+}
+
+.skills__name-features{
+	font-size: var(--smaller-font-size);
+	font-weight: var(--font-medium);
+	text-align: left;
+	
 }

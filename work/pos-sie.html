@@ -8,8 +8,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- BOOTSTRAP -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!-- FAVICON -->
 		<link rel="shortcut icon" href="" type="image/x-icon">
 		<!-- BOXICONS -->
@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="">
 		<!-- CSS -->
 		<link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- OPEN IMAGES -->
+    <link rel="stylesheet" href="/assets/css/lightbox.css">
 		<title>Portofolio | Satria Anugerah</title>
 	</head>
 	<body>
@@ -32,27 +34,75 @@
 		</header>
 
 <body>
-    <div class="container">
-      <section class="about section" id="about">
+    <div class="skills_container container grid">
+      <section class="section">
 				<span class="section__subtitle">Project documentation</span>
 				<h2 class="section__title">POS-SIE </h2>
 				<div class="about__container container img-project">
-					<img src="/assets/img/pos-sie/halaman login.JPG" alt="" class="about__img-project">
+					<img src="/assets/img/pos-sie/halaman login.JPG" alt="" class="about__img-project" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </section>
 
-            <div class="skills__container">
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 5</div>
+              <img src="/assets/img/pos-sie/halaman login.JPG" style="width:100%">
+              <div class="text">Halaman Login</div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 5</div>
+              <img src="/assets/img/pos-sie/dashboard admin.JPG" style="width:100%">
+              <div class="text">Halaman Dashboard</div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 5</div>
+              <img src="/assets/img/pos-sie/POS kasir.JPG" style="width:100%">
+              <div class="text">Halaman POS</div>
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 5</div>
+              <img src="/assets/img/pos-sie/penjualan manager.JPG" style="width:100%">
+              <div class="text">Halaman Penjualan</div>
+            </div>
+             <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="/assets/img/pos-sie/drilldown manager.JPG" style="width:100%">
+              <div class="text">Halaman Penjualan</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+           
+        </div>
+        </div>
+
+
+
+        <section class="about section" id="about">
+          <h3 class="skills__title-project"> About Project </h3>
+            <section class="skills__container">
               <div class="skills__content">
-                <h2 class="skills__title-project"> About Project </h2>
                 <div class="skills__box">
                   <h5 class="skills__name-project">
                     Aplikasi POS-SIE dibuat untuk mempermudah pengusaha UMKM, aplikasi ini
                     menggabungkan Point Of Sale (POS) untuk membantu seorang kasir mengelola 
                     proses transaksi, dan Sistem Informasi Eksekutif (SIE) untuk membantu seorang
                     eksekutif melakukan melakukan analisis terhadap data untuk perkembangan kafe 
+                    <br>
+                    <br>
+                    Aplikasi POS-SIE mempunyai 3 user yang terdiri dari : admin, kasir, dan eksekutif.
+                    terdapat fitur dari masing-masing setiap akses user, salah satu fitur yang dapat
+                    di unggulkan dalam POS-SIE yaitu fitur drilldown yang terdapat dalam eksekutif.
                   </h5>
                 </div>
-                
+              </div>
+            </section>
+            
+            <section class="section">
+              <div class="skills__container container grid">
+                <h3 class="skills__title"> Tech using </h3>
                 <div class="skills__content">
-                  <h3 class="skills__title"> Tech using </h3>
                   
                   <div class="skills__box">
                     <div class="skills__group">
@@ -106,6 +156,119 @@
                   </div>
                 </div>
               </div>
+              
+            </section>
+              
+            <section class="section">
+                <h3 class="skills__title"> App Features </h3>
+                <div class="skills__content">  
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='bx bxs-user-circle'></i>
+                        <div>
+                          <h3 class="skills__name"> Admin </h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <ul>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> CRUD User
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> CRUD Supplier
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> CRUD Inventory
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> CRUD Stok In and Out
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> CRUD Pengeluaran
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='bx bxs-user-circle'></i>
+                        <div>
+                          <h3 class="skills__name"> Kasir </h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <ul>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> CRUD Diskon
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> POS
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> Penjualan
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='bx bxs-user-circle'></i>
+                        <div>
+                          <h3 class="skills__name"> Eksekutif </h3>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <ul>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> CRUD User
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> CRUD Penjualan
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> Read Transaksi
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> Read Pengeluaran
+                            </p>
+                          </li>
+                          <li>
+                            <p class="skills__name-features"> 
+                              <i class='bx bx-radio-circle' ></i> Drilldown
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 					</div>
 				</div>
 			</section>
@@ -121,10 +284,8 @@
 		<br>
 		<br>
 		<br>
-		<!-- SCROLLREVEAL -->
-		<script src=""></script>
-		<!-- SWIPER JS -->
-		<script src=""></script>
+		<!-- OPEN IMAGES -->
+		<script src="/assets/js/lightbox.js"></script>
 		<!-- MIXITUP FILTER -->
 		<script src="assets/js/mixitup.min.js"></script>
 		<!-- MAIN JS -->
