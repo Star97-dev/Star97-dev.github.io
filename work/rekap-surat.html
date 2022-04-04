@@ -32,38 +32,48 @@
         <div class="skills__container container grid">
             <section class="section">
             <span class="section__subtitle">Project documentation</span>
-				<h2 class="section__title">POS-SIE </h2>
+				<h2 class="section__title"> Aplikasi Rekap Surat BTN </h2>
 				<div class="about__container container img-project">
-					<img src="/assets/img/pos-sie/halaman login.JPG" alt="" class="about__img-project" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					<img src="/assets/img/Approve-surat/loginAS.JPG" alt="" class="about__img-project" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         </section>
         <p class="section__subtitle-click"> Click here <i class='bx bxs-hand-up' ></i></p>
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
               <div class="mySlides">
-                <div class="numbertext">1 / 5</div>
-                <img src="/assets/img/pos-sie/halaman login.JPG" style="width:100%">
+                <div class="numbertext">1 / 7</div>
+                <img src="/assets/img/Approve-surat/loginAS.JPG" style="width:100%">
                 <div class="text">Halaman Login</div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">2 / 5</div>
-                <img src="/assets/img/pos-sie/dashboard admin.JPG" style="width:100%">
-                <div class="text">Halaman Dashboard</div>
+                <div class="numbertext">2 / 7</div>
+                <img src="/assets/img/Approve-surat/UserReqData.JPG" style="width:100%">
+                <div class="text">Halaman Requirement Data (User)</div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">3 / 5</div>
-                <img src="/assets/img/pos-sie/POS kasir.JPG" style="width:100%">
-                <div class="text">Halaman POS</div>
+                <div class="numbertext">3 / 7</div>
+                <img src="/assets/img/Approve-surat/UserDetailReq.JPG" style="width:100%">
+                <div class="text">Halaman Detail Requirement (User)</div>
               </div>
               <div class="mySlides">
-                <div class="numbertext">4 / 5</div>
-                <img src="/assets/img/pos-sie/penjualan manager.JPG" style="width:100%">
-                <div class="text">Halaman Penjualan</div>
+                <div class="numbertext">4 / 7</div>
+                <img src="/assets/img/Approve-surat/UserUploadDoc.JPG" style="width:100%">
+                <div class="text">Upload Data (User)</div>
               </div>
                <div class="mySlides">
-                <div class="numbertext">5 / 5</div>
-                <img src="/assets/img/pos-sie/drilldown manager.JPG" style="width:100%">
-                <div class="text">Halaman Penjualan</div>
+                <div class="numbertext">5 / 7</div>
+                <img src="/assets/img/Approve-surat/DocAdmin.JPG" style="width:100%">
+                <div class="text">Halaman Document (Admin)</div>
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="/assets/img/Approve-surat/DetailDocAdmin.JPG" style="width:100%">
+                <div class="text">Halaman Detail Document (Admin)</div>
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="/assets/img/Approve-surat/UpdateDocAdmin.JPG" style="width:100%">
+                <div class="text">Halaman Update Document (Admin)</div>
               </div>
               
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -78,15 +88,14 @@
               <div class="skills__content-pro">
                 <div class="skills__box">
                   <h5 class="skills__name">
-                    Aplikasi POS-SIE dibuat untuk mempermudah pengusaha UMKM, aplikasi ini
-                    menggabungkan Point Of Sale (POS) untuk membantu seorang kasir mengelola 
-                    proses transaksi, dan Sistem Informasi Eksekutif (SIE) untuk membantu seorang
-                    eksekutif melakukan melakukan analisis terhadap data untuk perkembangan kafe 
+                    Aplikasi Rekap Surat BTN dibuat untuk mempermudah user / developer dalam mengajukan dokumen untuk bekerja sama dengan pihak BTN.
+                    Dokumen tersebut akan di cek terlebih dahulu oleh admin, jika admin menyetujui maka status dokumen user akan menjadi "Approved"
+                    dan jika tidak maka statusnya akan menjadi "Rejected".  
                     <br>
                     <br>
-                    Aplikasi POS-SIE mempunyai 3 user yang terdiri dari : admin, kasir, dan eksekutif.
-                    terdapat fitur dari masing-masing setiap akses user, salah satu fitur yang dapat
-                    di unggulkan dalam POS-SIE yaitu fitur drilldown yang terdapat dalam eksekutif.
+                    Aplikasi ini juga dapat merekap data-data user / developer yang mengajukan dokumen, maka dari itu jika user / developer
+                    ingin melakukan kerja sama dengan pihak BTN lagi, maka user / developer tidak perlu mengajukan dokumen lagi dikarenakan data-data
+                    sebelumnya sudah tercatat data database.
                   </h5>
                 </div>
               </div>
@@ -125,23 +134,7 @@
                       <i class='bx bxs-badge-check' ></i>
     
                       <div>
-                        <h3 class="skills__name-pro"> Jquery </h3>
-                      </div>
-                    </div>
-    
-                    <div class="skills__data">
-                      <i class='bx bxs-badge-check' ></i>
-    
-                      <div>
                         <h3 class="skills__name-pro"> Codeigniter </h3>
-                      </div>
-                    </div>
-    
-                    <div class="skills__data">
-                      <i class='bx bxs-badge-check' ></i>
-    
-                      <div>
-                        <h3 class="skills__name-pro"> Chart.js </h3>
                       </div>
                     </div>
                   </div>
@@ -163,27 +156,22 @@
                       <ul>
                         <li>
                           <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> CRUD User
+                            <i class='bx bx-radio-circle' ></i> Login & Logout
                           </p>
                         </li>
                         <li>
                           <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> CRUD Supplier
+                            <i class='bx bx-radio-circle' ></i> Update Document User
                           </p>
                         </li>
                         <li>
                           <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> CRUD Inventory
+                            <i class='bx bx-radio-circle' ></i> Read Document User
                           </p>
                         </li>
                         <li>
                           <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> CRUD Stok In and Out
-                          </p>
-                        </li>
-                        <li>
-                          <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> CRUD Pengeluaran
+                            <i class='bx bx-radio-circle' ></i> Upload File
                           </p>
                         </li>
                       </ul>
@@ -193,61 +181,29 @@
                   <div class="skills__group">
                     <div class="skills__data">
                       <div>
-                        <h3 class="skills__name-fe"><i class='bx bxs-user-circle'></i> Kasir </h3>
+                        <h3 class="skills__name-fe"><i class='bx bxs-user-circle'></i> User / Developer </h3>
                       </div>
                     </div>
                     <div class="skills__data">
                       <ul>
                         <li>
                           <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> CRUD Diskon
+                            <i class='bx bx-radio-circle' ></i> Login & Logout
                           </p>
                         </li>
                         <li>
                           <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> POS
+                            <i class='bx bx-radio-circle' ></i> Upload Document
                           </p>
                         </li>
                         <li>
                           <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> Penjualan
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="skills__group">
-                    <div class="skills__data">
-                      <div>
-                        <h3 class="skills__name-fe"><i class='bx bxs-user-circle'></i> Eksekutif </h3>
-                      </div>
-                    </div>
-                    <div class="skills__data">
-                      <ul>
-                        <li>
-                          <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> CRUD User
+                            <i class='bx bx-radio-circle' ></i> Read Document
                           </p>
                         </li>
                         <li>
                           <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> CRUD Penjualan
-                          </p>
-                        </li>
-                        <li>
-                          <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> Read Transaksi
-                          </p>
-                        </li>
-                        <li>
-                          <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> Read Pengeluaran
-                          </p>
-                        </li>
-                        <li>
-                          <p class="skills__name-features"> 
-                            <i class='bx bx-radio-circle' ></i> Drilldown
+                            <i class='bx bx-radio-circle' ></i> Delete Document
                           </p>
                         </li>
                       </ul>
