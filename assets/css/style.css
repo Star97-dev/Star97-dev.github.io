@@ -774,7 +774,6 @@ img {
 	}
 
 	.about__info{
-		grid-template-columns: repeat(3, 140px);
 		justify-content: center;
 	}
 
