@@ -851,7 +851,8 @@ img {
 		justify-content: center;
 		column-gap: 2.5rem;
 		line-height: 2rem;
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(2, 160px);
 	}
 
 	.skills__name-fe{
