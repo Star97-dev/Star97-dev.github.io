@@ -169,7 +169,7 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen and (min-width: 321px ) and (max-width: 576px)
+@media screen and (min-width: 321px ) and (max-width: 576px){
 	.column{
 		width: 50%;
 	}
@@ -229,6 +229,25 @@ img.hover-shadow {
 	margin-top: -40px;
 	font-size: 25px;
 	}
+
+  .close {
+    color: white;
+    position: absolute;
+    margin-top: -2rem;
+    margin-right: -2rem;
+    right: 45px;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+
+  .text{
+    font-size: 18px;
+    text-align: center;
+    margin-top: -5px;
+    font-weight: bold;
+    margin-bottom: 11px;
+    background-color: black;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
@@ -240,9 +259,28 @@ img.hover-shadow {
 	margin-top: -40px;
 	font-size: 25px;
 	}
+
+  .close {
+    color: white;
+    position: absolute;
+    margin-top: -2rem;
+    margin-right: -2rem;
+    right: 45px;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+
+  .text{
+    font-size: 22px;
+    text-align: center;
+    margin-top: -5px;
+    font-weight: bold;
+    margin-bottom: 11px;
+    background-color: black;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px){
+@media (min-width: 992px){
 	.column{
 	width: 25%;
 	}
@@ -255,4 +293,23 @@ img.hover-shadow {
 	.modal-content{
 		margin-top: -30px;
 	}
+
+  .close {
+    color: white;
+    display: flex;
+    margin-top: -2rem;
+    margin-right: -2rem;
+    right: 45px;
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+  .text{
+    font-size: 25px;
+    text-align: center;
+    margin-top: -5px;
+    font-weight: bold;
+    margin-bottom: 11px;
+    background-color: black;
+  }
 }
