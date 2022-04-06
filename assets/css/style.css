@@ -757,7 +757,7 @@ img {
 	}
 }
 /* For medium devices */
-@media screen and (min-width: 321px ) and (max-width: 576px){
+@media screen and (min-width: 576px){
 	.nav__menu{
 		width: 328px;
 		left: 0;
@@ -816,7 +816,7 @@ img {
 
 	.section__subtitle-click {
 		text-align: center;
-		margin-top: -6rem;
+		margin-top: -5rem;
 		margin-left: -0.2rem;
 		font-size: var(--smaller-font-size);
 		color: var(--text-color-light);
@@ -831,7 +831,6 @@ img {
 		padding: 1.5rem;
 		border-radius: 1.25rem;
 		margin-top: -2rem;
-		
 	}
 	
 	.tech__container{
@@ -840,7 +839,7 @@ img {
 	}
 
 	.skills__name-pro{
-		font-size: 10px;
+		font-size: 15px;
 	}
 
 	.features__container{
@@ -851,6 +850,7 @@ img {
 		justify-content: center;
 		column-gap: 2.5rem;
 		line-height: 2rem;
+		display: flex;
 	}
 
 	.skills__name-fe{
@@ -867,6 +867,12 @@ img {
 		text-align: left;
 		margin-left: auto;
 	}
+
+	.grid-pro{
+		display: grid;
+		gap: 1.25rem;
+		justify-content: space-evenly;
+	}
 }
 
 @media screen and (min-width: 767px){
@@ -878,7 +884,67 @@ img {
 		grid-template-columns: repeat(2, max-content);
 		justify-content: center;
 		column-gap: 3rem;
-	} 
+	}
+	
+	.section__subtitle-click {
+		text-align: center;
+		margin-top: -5rem;
+		margin-left: -0.2rem;
+		font-size: var(--smaller-font-size);
+		color: var(--text-color-light);
+	}
+
+	.about__container-pro{
+		margin-top: -3rem;
+	}
+	
+	.skills__content-pro{
+		background-color: var(--container-color);
+		padding: 1.5rem;
+		border-radius: 1.25rem;
+		margin-top: -2rem;
+	}
+	
+	.tech__container{
+		row-gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.skills__name-pro{
+		font-size: 15px;
+	}
+
+	.features__container{
+		margin-top: 2rem;
+	}
+
+	.skills__box-pro{
+		justify-content: center;
+		column-gap: 2.5rem;
+		line-height: 2rem;
+		display: flex;
+	}
+
+	.skills__name-fe{
+		font-size: var(--large-font-size);
+		font-weight: var(--font-medium);
+		line-height: 15px;
+		text-align: justify;
+		margin-top: 1rem;
+	}
+
+	.skills__name-features{
+		font-size: var(--normal-font-size);
+		font-weight: var(--font-medium);
+		text-align: left;
+		margin-left: auto;
+	}
+
+	.grid-pro{
+		display: grid;
+		gap: 1.25rem;
+		justify-content: space-evenly;
+	}
 }
 /* For large devices */
 @media screen and (min-width: 992px){
